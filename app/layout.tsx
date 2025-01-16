@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "League of Legends Stats Tracker",
+  title: "Team Fight Tactics Head to Head Battle",
   description:
-    "Track your favorite summoners, recent matches, and champion rotations.",
+    "Challenge your friends to a Team Fight Tactics challenge and prove your worth!",
 };
 
 export default function RootLayout({
@@ -32,17 +32,17 @@ export default function RootLayout({
           <Head>
             <meta
               property="og:title"
-              content="League of Legends P2P Battle"
+              content="Team Fight Tactics P2P Battle"
             />
             <meta
               property="og:description"
-              content="Track your favorite summoners, recent matches, and champion rotations."
+              content="Join the battle and prove your worth !"
             />
             <meta
               property="og:image"
-              content="https://i.imgur.com/your-image-id.png"
+              content="https://0563-152-59-145-69.ngrok-free.app/image.png"
             />
-            <meta property="og:url" content="http://localhost:3000" />
+            <meta property="og:url" content="https://0563-152-59-145-69.ngrok-free.app/pages/challenge?player=2" />
             <meta property="og:type" content="website" />
           </Head>
           {children}

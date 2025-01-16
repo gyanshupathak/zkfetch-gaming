@@ -1,8 +1,8 @@
 import { FaTwitter, FaTelegram, FaDiscord } from "react-icons/fa";
 
 function ShareButtons() {
-  const url = "https://85e9-2409-4064-2c0d-bc6e-cc75-a9eb-ed8c-c0ca.ngrok-free.app";
-  const text = "Check out this awesome League of Legends wagering platform!";
+  const url = "https://0563-152-59-145-69.ngrok-free.app/pages/challenge?player=2";
+  const text = "Player 1 have invited you to challenge him on team fight tactics battle!";
 
   return (
     <div className="flex space-x-4 p-4">

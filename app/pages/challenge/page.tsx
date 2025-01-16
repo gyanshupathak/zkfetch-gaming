@@ -76,8 +76,6 @@ const ChallengePageContent = () => {
       } else {
         setError("An unknown error occurred");
       }
-    } finally {
-      setLoadingResult(false);
     }
   };
 
@@ -138,12 +136,12 @@ const ChallengePageContent = () => {
               <>
                 <p>Send this link to the other player:</p>
                 <div className="bg-gray-100 p-4 rounded">
-                  <code>{`https://example.com/pages/challenge?player=2`}</code>
+                  <code>{`https://0563-152-59-145-69.ngrok-free.app/pages/challenge?player=2`}</code>
                 </div>
                 <button
                   onClick={() =>
                     navigator.clipboard.writeText(
-                      `https://example.com/pages/challenge?player=2`
+                      `https://0563-152-59-145-69.ngrok-free.app/pages/challenge?player=2`
                     )
                   }
                   className="bg-green-500 text-white px-4 py-2 w-full rounded mt-4 hover:bg-green-600"
@@ -169,7 +167,7 @@ const ChallengePageContent = () => {
             </button>
           </div>
         )}
-        {showResult && (
+        {loadingResult && (
           <div className="mt-6 text-center">
             <h2 className="text-xl font-bold">{winner} won the battle!</h2>
             <p className="text-lg mt-2">Winner Kills: {winnerKills}</p>
