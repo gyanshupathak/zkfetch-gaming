@@ -2,7 +2,19 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First Clone the gitHub Repo :
+git clone <Repo-url>
+
+make sure you have node and npm installed in your system .
+
+make sure you have rust environment installed in your system .
+
+use ngrok for getting shareable url without deployment .
+
+then run :
+npm install
+
+Now, run the development server:
 
 ```bash
 npm run dev
