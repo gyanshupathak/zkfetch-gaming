@@ -1,10 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState , Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import ShareButtons from "@/components/sharebuttons";
 import Image from "next/image";
 
-const ChallengePage = () => {
+const ChallengePageContent = () => {
   const searchParams = useSearchParams();
   const player = searchParams.get("player");
   const [puuid, setPuuid] = useState("");
@@ -179,6 +179,14 @@ const ChallengePage = () => {
         <ShareButtons />
       </div>
     </div>
+  );
+};
+
+const ChallengePage = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ChallengePageContent />
+    </Suspense>
   );
 };
 
