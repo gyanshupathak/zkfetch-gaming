@@ -5,34 +5,28 @@ import Link from "next/link";
 
 const MainPage = () => {
   return (
-    <main className="min-h-screen p-6">
-      <h1 className="text-3xl font-bold text-center my-4">
-        Welcome to League of Legends Stats Tracker
-      </h1>
-      <p className="text-center text-gray-600 my-4">
-        Track your favorite summoners, recent matches, and champion rotations.
-      </p>
-      <div className="flex justify-center gap-6 mt-8">
-        <Link href="/pages/rotations">
-          <div className="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">
-            Champion Rotations
-          </div>
-        </Link>
-        <Link href="/pages/summoner">
-          <div className="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600">
-            Summoner Stats
-          </div>
-        </Link>
-        <Link href="/pages/match">
-          <div className="bg-purple-500 text-white px-6 py-3 rounded hover:bg-purple-600">
-            Match Details
-          </div>
-        </Link>
-        <Link href="/pages/latestMatch">
-          <div className="bg-purple-500 text-white px-6 py-3 rounded hover:bg-purple-600">
-            Latest Match Id
-          </div>
-        </Link>
+    <main
+      className="min-h-screen bg-cover bg-center text-white flex items-center justify-center relative"
+      style={{
+        backgroundImage: 'url("/image.png")',
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+
+      <div className="z-10 text-center max-w-2xl p-6">
+        <h1 className="text-5xl font-extrabold mb-6">
+          Welcome to Team Fight Tactics Battle
+        </h1>
+        <p className="text-lg text-gray-300 mb-8">
+          Challenge other players and prove your skills on the battlefield!
+        </p>
+        <div className="flex justify-center gap-6">
+          <Link href="/pages/challenge?player=1">
+            <div className="bg-purple-600 text-white px-8 py-4 rounded-full font-semibold text-lg cursor-pointer shadow-lg hover:bg-purple-700 transition">
+              Create Challenge
+            </div>
+          </Link>
+        </div>
       </div>
     </main>
   );
